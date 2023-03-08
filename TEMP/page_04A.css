@@ -1,0 +1,98 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    }
+    h1 {
+    font-size: 2.0em;
+    color: Navy;
+    margin-top: 1em;
+    }
+
+    h2 {
+    font-size: 1.8em;
+    color: Navy;
+    }
+
+    .part1{
+        background-color: yellow;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+    ol.navatas{
+        margin: 7px;
+        padding: 7px;
+        overflow: hidden;
+        background-color: rgb(17, 17, 80);
+    }
+
+    nav {
+        background-color: rgb(17, 17, 80);
+        color: white;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 5px;
+        margin: 0px;
+    } 
+
+    ul li{
+        margin-left: 19px;
+    }
+
+    ul,ol{
+        padding-left: 0px;
+    }
+
+    nav li a {
+    text-decoration: none;
+    color: lightblue;
+    padding: 5px;
+    background-color: grey;
+    border-radius: 10px;
+    }
+
+    nav li a:hover {
+    background-color: rgb(182, 180, 180);
+    color: black;
+    }
+
+
+    ol{
+        counter-reset: item;
+        padding-left: 0em;
+    }
+    
+    ol.aku li{
+        display: block;
+    }
+    
+    ol.aku li:before {
+        content: counters(item, ".") ".    ";
+        counter-increment: item;
+    }
+
+    dl{
+
+        border-radius: 15px;
+        border: 1px solid black;
+        
+    }
+    dd{
+        background-color: rgb(189, 186, 186);
+        padding: 10px;
+        margin: auto;
+        border-radius: 0px 0px 15px 15px;
+    }
+    dt{
+        background-color: rgb(17, 17, 80);
+        color: white;
+        padding: 10px;
+        margin: auto;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+

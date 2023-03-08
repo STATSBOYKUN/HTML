@@ -1,0 +1,84 @@
+body{
+    background-color: #f0f0f0;
+}
+
+table{
+    margin-bottom: 20px;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    margin: 0 auto 15px;
+}
+
+p{
+    margin: 0px 0px 1ex 0px;
+    font-weight: bold;
+}
+
+tr:nth-child(even){
+    background-color: #F2F222;
+} 
+/* Background Color Baris genap */
+
+th{
+    font-weight: bold;
+    background-color: lightblue;
+    border: 1px solid black;    
+}
+
+td:nth-child(odd){
+    text-align: right;
+}
+
+td:first-child{
+    background-color: lightblue;
+    font-weight: bold;
+    text-align: left;
+}
+
+td{
+    border: 1px solid black;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+main{
+    text-align: center;
+    margin: auto;
+}
+
+main::after{
+    content: "";
+    display: inline-block;
+    margin: auto;
+}
+
+dl{
+    display: inline-block;
+    text-align: left;
+    width: 460px;
+    margin-bottom: 10px;
+}
+
+dd{
+    padding: 0em;
+    background-color: yellow;
+}
+
+dt{
+    background-color: lightblue;
+    font-weight: bold;
+    margin: auto;
+    padding: 0em;
+    float: left;
+}
+
+dl::after{
+    content: "";
+    margin: 0;
+    padding: 0.5em;
+    clear: both;
+}
+
+
+
+

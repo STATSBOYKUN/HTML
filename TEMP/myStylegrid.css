@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+    grid-template-rows: auto 160px auto;
+    grid-template-areas: "header header header"
+                        "nav nav nav"
+                         "left main right"
+                         "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(153, 45, 255);
+    color: rgb(221, 255, 129);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0; 
+}
+
+.topnav {
+    grid-area: nav;
+    background-color: rgb(109, 41, 173);
+    overflow: hidden; 
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 120px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+}
+
+.topnav a {
+    display: inline-block;
+    color: rgb(221, 255, 129);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: rgb(211, 164, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* main{
+    padding-top: 160px;
+    display: flex;
+} */
+
+/* aside.right::after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+
+aside.left{
+    /* float: left; */
+    grid-area: left;
+    padding: 15px;
+    background-color: rgb(199, 116, 255);
+    box-sizing: border-box;
+    /* width: 25%; */
+}
+
+main {
+    grid-area: main;
+    /* float: left; */
+    padding: 15px;
+    background-color: rgb(214, 153, 255);
+    box-sizing: border-box;
+    /* width: 75%; */
+}
+
+aside.right{
+    grid-area: right;
+    /* float: right; */
+    padding: 15px;
+    background-color: rgb(199, 116, 255);
+    box-sizing: border-box;
+    /* width: 25%; */
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    margin: 0;
+
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "footer1 footer1 footer1"
+                "copyright botnov email";
+
+    background-color: rgb(153, 45, 255);
+    color: rgb(221, 255, 129);
+    padding: 10px;
+}
+
+.footer{
+    grid-area: footer1;
+    text-align: center;
+}
+
+.bottomnav{
+    grid-area: botnov;
+    overflow: hidden;
+    text-align: center;
+}
+
+.bottomnav a {
+    display: inline-block;
+    color: rgb(221, 255, 129);
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.bottomnav a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.copyright{
+    grid-area: copyright;
+    display: inline-flex;
+    text-align: left;
+}
+
+.email
+{
+    grid-area: email;
+    text-align: right;
+}
+
+.kotak{
+    position: fixed;
+    background-color: black;
+    left: 100px;
+    right: 100px;
+    top: 100px;
+    bottom: 100px;
+    opacity: 70%;
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 5px solid black;
+    position: absolute;
+    right : 0;
+}

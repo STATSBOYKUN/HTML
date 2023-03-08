@@ -1,0 +1,116 @@
+body{
+    margin: auto
+}
+
+header {
+    background-color: rgb(153, 45, 255);
+    color: rgb(221, 255, 129);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0; 
+}
+
+.topnav {
+    background-color: rgb(109, 41, 173);
+    overflow:hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 120px;
+    text-align: center;
+}
+
+.topnav a {
+    display: inline-block;
+    color: rgb(221, 255, 129);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: rgb(211, 164, 255);
+    color: rgb(0, 0, 0);
+}
+
+.topnav a.active {
+    background-color: rgb(211, 164, 255);
+    color: rgb(0, 0, 0);
+}
+
+main{
+    padding-top: 160px;
+    display: flex;
+}
+
+main::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+aside{
+    float: left;
+    padding: 15px;
+    background-color: rgb(190, 190, 190);
+    box-sizing: border-box;
+    width: 25%;
+}
+
+article {
+    float: left;
+    padding: 15px;
+    background-color: rgb(190, 190, 190);
+    box-sizing: border-box;
+    width: 75%;
+}
+
+
+
+footer{
+    background-color: rgb(153, 45, 255);
+    color: rgb(221, 255, 129);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.bottomnav{
+    overflow: hidden;
+    text-align: center;
+}
+
+.bottomnav a {
+    display: inline-block;
+    color: rgb(221, 255, 129);
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.bottomnav a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.kotak{
+    position: fixed;
+    background-color: black;
+    left: 100px;
+    right: 100px;
+    top: 100px;
+    bottom: 100px;
+    opacity: 70%;
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 5px solid black;
+    position: absolute;
+    right : 0;
+}
